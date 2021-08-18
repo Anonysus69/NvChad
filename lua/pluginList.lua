@@ -241,13 +241,6 @@ return packer.startup(function()
    use {
       "glepnir/dashboard-nvim",
       disable = not plugin_status.dashboard_nvim,
-      cmd = {
-         "Dashboard",
-         "DashboardNewFile",
-         "DashboardJumpMarks",
-         "SessionLoad",
-         "SessionSave",
-      },
       setup = function()
          require "plugins.dashboard"
          require("mappings").dashboard()
